@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Um projeto UFG - Catalão">
+        <link rel="shortcut icon" href="images/icon/logo-white.png" sizes="35x35" type="image/png">
+
+        <!-- Title Page-->
+        <title>TÍTULO</title>
+
+        <!-- Fontfaces CSS-->
+        <link href="css/font-face.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+        <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+        <!-- Bootstrap CSS-->
+        <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+        <!-- Vendor CSS-->
+        <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+        <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+        <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+        <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+        <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+        <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+        <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+        <!-- Main CSS-->
+        <link href="css/theme.css" rel="stylesheet" media="all">
+
+        <style type="text/css">/* Chart.js */
+            @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}
+            @keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}
+            .chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+        </style>
+        <style type="text/css">/* Chart.js */
+            @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+        </style>
+        <style>
+            .switch {
+              position: relative;
+              display: inline-block;
+              width: 30px;
+              height: 17px;
+            }
+            
+            .switch input { 
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+            
+            .slider {
+              position: absolute;
+              cursor: pointer;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #ccc;
+              -webkit-transition: .2s;
+              transition: .2s;
+            }
+            
+            .slider:before {
+              position: absolute;
+              content: "";
+              height: 13px;
+              width: 13px;
+              left: 2px;
+              bottom: 2px;
+              background-color: white;
+              -webkit-transition: .2s;
+              transition: .2s;
+            }
+            
+            input:checked + .slider {
+              background-color: #2196F3;
+            }
+            
+            input:focus + .slider {
+              box-shadow: 0 0 1px #2196F3;
+            }
+            
+            input:checked + .slider:before {
+              -webkit-transform: translateX(13px);
+              -ms-transform: translateX(13px);
+              transform: translateX(13px);
+            }
+            
+            /* Rounded sliders */
+            .slider.round {
+              border-radius: 17px;
+            }
+            
+            .slider.round:before {
+              border-radius: 50%;
+            }
+            </style>
+</head>
+    <body class="animsition" style="animation-duration: 900ms; opacity: 1;">
+        <div class="page-wrapper">
+            <!-- HEADER MOBILE-->
+            <header class="header-mobile d-block d-lg-none">
+                <div class="header-mobile__bar">
+                    <div class="container-fluid">
+                        <div class="header-mobile-inner">
+                            <button class="hamburger hamburger--slider" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar-mobile" style="display: none;">
+                    <div class="container-fluid">
+                        <ul class="navbar-mobile__list list-unstyled">
+                            <li>
+                                <a href="Laje-form.php"><i class="fas fa-superscript"></i>Laje</a>
+                            </li>
+                            <li>
+                                <a href="Viga-form.php"><i class="fas fa-superscript"></i>Viga</a>
+                            </li>
+                            <li>
+                                <a href="Pilar-form.php"><i class="fas fa-superscript"></i>Pilar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- END OF - HEADER MOBILE-->
+            <!-- PAGE CONTENT-->
+            <div class="page-container3">
+                <header class="header-desktop4 p-b-30">
+                    <div class="container p-t-20">
+                        <center><h1>Viga</h1></center>
+                    </div>
+                </header>
+                <section class="p-t-50"></section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3">
+                               <!-- MENU SIDEBAR-->
+                               <aside class="menu-sidebar2">
+                                    <div class="menu-sidebar2__content js-scrollbar1 ps">
+                                        <div class="account2">
+                                            <img src="images/icon/logo-blue.png" alt="CTT" style="width:auto;height:60px;">
+                                        </div>
+                                        <nav class="navbar-sidebar2">
+                                            <ul class="list-unstyled navbar__list">
+                                                <li>
+                                                    <a href="Laje-form.php"><i class="fas fa-info"></i>Sobre</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Viga-form.php"><i class="fas fa-cog"></i>Opções</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Pilar-form.php"><i class="fas fa-question"></i>Ajuda</a>
+                                                </li>
+                                                <li>
+                                                    <hr>
+                                                </li>
+                                            	<li>
+                                                    <a href="Laje-form.php"><i class="fas fa-sitemap"></i>Laje</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Viga-form.php"><i class="fas fa-sitemap"></i>Viga</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Pilar-form.php"><i class="fas fa-sitemap"></i>Pilar</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </aside>
+                            </div>
+                            <!-- PAGE CONTENT-->
+                            <div class="page-content col-xl-9">
+                                <form method="post" action="ABCP.php">
+                                    <div>
+                                        <div class="col">
+                                            <div class="card border border-secondary">
+                                                <div class="card-header">
+                                                    <div class="row">
+                                                        <strong class="card-title">&nbsp &nbsp &nbsp Dados do Projeto</strong>
+                                                        <div class="col"></div>
+                                                        <button type="button" class="btn btn-outline-secondary mb-1" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa  fa-question"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row form-group">
+                                                        <div class="col">
+                                                            <label for="number-input" class=" form-control-label">Subsolo:</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="radio" name="tipo-1" id="tipo-1" value="0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col">
+                                                            <label for="number-input" class=" form-control-label">Sistema principal:</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="radio" name="tipo-1" id="tipo-1" value="1">
+                                                                <small class="form-text text-muted">
+                                                                    <i class="fa fa-caret-up"></i> Descrição para os selects
+                                                                </small>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="row form-group">
+                                                        <div class="col">
+                                                            <label for="number-input" class=" form-control-label">Cota viga <b>Z<small>i</small></b> (m):</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="number" step="any" min="1" name="abatimento" class="form-control">
+                                                                <small class="form-text text-muted">
+                                                                    <i class="fa fa-caret-up"></i> Descrição para o input
+                                                                </small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col-4">
+                                                            <label for="number-input" class=" form-control-label">Acesso para pessoas com pouca mobilidade</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <label class="switch">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                                <small class="form-text text-muted">
+                                                                    <i class="fa fa-caret-up"></i> Descrição para o switch 
+                                                                </small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col">
+                                                            <label for="number-input" class=" form-control-label">Total de pavimentos:</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="number" step="any" min="1" name="abatimento" class="form-control">
+                                                                <small class="form-text text-muted">
+                                                                    <i class="fa fa-caret-up"></i> Descrição para o input
+                                                                </small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col">
+                                                            <label for="number-input" class=" form-control-label">Área total do pavimento:</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="number" step="any" min="1" name="abatimento" class="form-control">
+                                                                <small class="form-text text-muted">
+                                                                    <i class="fa fa-caret-up"></i> Descrição para o input
+                                                                </small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col">
+                                                            <label for="number-input" class=" form-control-label">Área total:</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="number" step="any" min="1" name="abatimento" class="form-control">
+                                                                <small class="form-text text-muted">
+                                                                    <i class="fa fa-caret-up"></i> Descrição para o input
+                                                                </small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col">
+                                                            <label for="number-input" class=" form-control-label">Classificação:</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <select name="fck" placeholder="Resistencia à compressão" class="form-control">
+                                                                <option value="A-Nome1">A-1</option>
+                                                                <option value="A-Nome2">A-2</option>
+                                                                <option value="A-Nome3">A-3</option>
+                                                            </select>
+                                                                <small class="form-text text-muted">
+                                                                    <i class="fa fa-caret-up"></i> Descrição para o select
+                                                                </small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card border border-secondary">
+                                                <div class="card-header">
+                                                    <div class="row">
+                                                        <strong class="card-title">&nbsp &nbsp &nbsp Valor do Tempo Requerido de Fogo <i>(TRRF)</i></strong>
+                                                        <div class="col"></div>
+                                                        <button type="button" class="btn btn-outline-secondary mb-1" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa  fa-question"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row form-group">
+                                                        <div class="col">
+                                                            <label for="number-input" class=" form-control-label"><b>TRRF</b> (min):</label>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="number" step="any" min="1" name="abatimento" class="form-control">
+                                                                <small class="form-text text-muted">
+                                                                    <i class="fa fa-caret-up"></i> Descrição para o input
+                                                                </small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Nome da Tabela</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="table-responsive table--no-card m-b-30">
+                                                            <table class="table table-borderless table-striped table-earning">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>date</th>
+                                                                        <th>order ID</th>
+                                                                        <th>name</th>
+                                                                        <th class="text-right">price</th>
+                                                                        <th class="text-right">quantity</th>
+                                                                        <th class="text-right">total</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2018-09-29 05:57</td>
+                                                                        <td>100398</td>
+                                                                        <td>iPhone X 64Gb Grey</td>
+                                                                        <td class="text-right">$999.00</td>
+                                                                        <td class="text-right">1</td>
+                                                                        <td class="text-right">$999.00</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2018-09-28 01:22</td>
+                                                                        <td>100397</td>
+                                                                        <td>Samsung S8 Black</td>
+                                                                        <td class="text-right">$756.00</td>
+                                                                        <td class="text-right">1</td>
+                                                                        <td class="text-right">$756.00</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <center>
+                                                <button type="submit" class="btn btn-outline-secondary" href="ABCP.php">Processar Dosagem</button>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="copyright">
+                                    <p>Copyright © 2019 Coretec Tools. Todos os diretos reservados</p>
+                                    <small>Um projeto UFG Catalão</small>
+                                </div>
+                                <!-- end of - Cáculo da Dosagem-->
+                            </div><!-- end of - PAGE CONTENT-->
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        <!-- Jquery JS-->
+        <script src="vendor/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+        <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+        <!-- Vendor JS       -->
+        <script src="vendor/slick/slick.min.js">
+        </script>
+        <script src="vendor/wow/wow.min.js"></script>
+        <script src="vendor/animsition/animsition.min.js"></script>
+        <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+        </script>
+        <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendor/counter-up/jquery.counterup.min.js">
+        </script>
+        <script src="vendor/circle-progress/circle-progress.min.js"></script>
+        <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+        <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+        <script src="vendor/select2/select2.min.js">
+        </script>
+
+        <!-- Main JS-->
+        <script src="js/main.js"></script>
+    <!-- end document-->
+    
+</body></html>
